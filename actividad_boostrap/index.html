@@ -15,7 +15,7 @@
 
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-info-subtle gradient">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">App</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,76 +43,69 @@
 
     <!-- contedido -->
 
-    <div class="container-mt-3">
+    <div class="container mt-5">
 
         <div class="row">
 
             <div class="col-md-6">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="imagen">
+                    <img src="https://picsum.photos/400" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Título</h5>
-                        <p class="card-text">Descripción breve del componente.</p>
-                        <button class="btn btn-primary" id="btnSaludo">Saludar</button>
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <button class="btn btn-primary btn-modal" id="btnSaludo">Ver más</button>
                     </div>
                 </div>
 
-
             </div>
+            
 
             <div class="col-md-6">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="imagen">
+                    <img src="https://picsum.photos/400" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Título</h5>
-                        <p class="card-text">Descripción breve del componente.</p>
-                        <button class="btn btn-primary" id="btnSaludo">Saludar</button>
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <button class="btn btn-primary btn-modal" id="btnSaludo">Ver más</button>
                     </div>
                 </div>
 
             </div>
+        </div>
+    
 
+
+        <!-- formulario inicio de sesion -->
+        <div class="row mt-5" id="login">
+
+            <div class="col-md-6 mx-auto">
+                <f <h3 class="text-center mb-3"> Iniciar sesion</h3>
+                    <div id="mensaje" class="mt-3 text-center"></div>
+                    <form>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Contraseña</label>
+                        <input type="text" class="form-control" id="password" placeholder="Contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3"> Ingresar</button>
+                    </form>
+            </div>
         </div>
     </div>
-
-
-    <!-- formulario inicio de sesion -->
-    <div class="row mt-5" id="login">
-
-        <div class="col-md-6 mx-auto">
-            <f <h3 class="text-center mb-3"> Iniciar sesion</h3>
-                <div id="mensaje" class="mt-3 text-center"></div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
-                </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label">Contraseña</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña">
-                </div>
-                <button type="submit" class="btn btn-primary mb-3"> Ingresar</button>
-        </div>
-    </div>
-    <!-- modal -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="miModal" >
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    Has hecho click en "Ver más"
                 </div>
             </div>
         </div>
